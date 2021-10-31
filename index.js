@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(4000, () => {
-  console.info('server started 🚀')
+  console.info('server up started 🚀')
 });
