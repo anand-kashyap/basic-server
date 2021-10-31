@@ -1,0 +1,7 @@
+@host=http://localhost:4000
+
+### foo route
+GET {{host}}/foo
+
+### main route
+GET {{host}}
