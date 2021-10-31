@@ -16,6 +16,7 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
+          #! pkey must be in PEM format (id_DSO_rsa) - https://github.com/easingthemes/ssh-deploy#1-ssh_private_key-required
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: '-rltgoDzvO --delete'
           SOURCE: ''
