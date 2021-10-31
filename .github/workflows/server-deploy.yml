@@ -2,6 +2,7 @@ name: deploy on server and setup env
 on: [push]
 jobs:
   build:
+    environment: production
     runs-on: ubuntu-latest
     steps:
       - name: Yarn setup with cache
